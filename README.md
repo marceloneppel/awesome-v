@@ -24,7 +24,7 @@ A curated list of awesome V frameworks, libraries and software. Inspired by [awe
 
 ## Articles
 
-Articles about V language and related topics.
+*Articles about V language and related topics.*
 
 ### Introduction
 
