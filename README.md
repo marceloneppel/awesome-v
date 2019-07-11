@@ -6,6 +6,7 @@ A curated list of awesome V frameworks, libraries and software. Inspired by [awe
 
 - [Awesome V](#awesome-v)
     - [Official](#official)
+    - [Articles](#articles)
     - [Software](#software)
 
 ## Official
@@ -20,6 +21,14 @@ A curated list of awesome V frameworks, libraries and software. Inspired by [awe
 * FAQ: https://vlang.io/#faq
 * Blog: https://blog.vlang.io/
 * Forum: https://blog.vlang.io/forum
+
+## Articles
+
+Articles about V language and related topics.
+
+### Introduction
+
+- [An introduction to V](https://simonknott.de/articles/VLang.html) - Building beautiful, flexible user interfaces by [Simon Knott](https://simonknott.de).
 
 ## Software
 
