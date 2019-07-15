@@ -1,0 +1,31 @@
+<html>
+    <body>
+        <div id="content">
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.0/showdown.min.js" type="text/javascript">
+		</script>
+        <script type="text/javascript">
+            function processMarkdown(file) {
+                var rawFile = new XMLHttpRequest();
+                rawFile.open("GET", file, false);
+                rawFile.onreadystatechange = function ()
+                {
+                    if(rawFile.readyState === 4)
+                    {
+                        if(rawFile.status === 200 || rawFile.status == 0)
+                        {
+                            var converter = new showdown.Converter(),
+                            html = converter.makeHtml(rawFile.responseText);
+                            document.getElementById('content').innerHTML = html;
+                        }
+                    }
+                }
+                rawFile.send(null);
+            }
+
+            (function() {
+                processMarkdown('https://raw.githubusercontent.com/marceloneppel/awesome-v/master/README.md');
+            })();
+        </script>
+    </body>
+</html>
